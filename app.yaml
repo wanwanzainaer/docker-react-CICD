@@ -1,0 +1,7 @@
+runtime: custom
+env: flex
+manual_scaling:
+  instances: 1
+network:
+  forwarded_ports:
+    - 3000:80
