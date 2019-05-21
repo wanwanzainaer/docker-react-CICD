@@ -3,7 +3,7 @@ serivces:
   - docker
 before_install:
   - openssl aes-256-cbc -K $encrypted_84182b89dffc_key -iv $encrypted_84182b89dffc_iv
-    -in React-docker-09ec0d26a5b0.json.enc -out React-docker-09ec0d26a5b0.json -d
+    -in React-docker-3bd6cb24ca94.json.enc -out React-docker-3bd6cb24ca94.json -d
   - docker build -t wanwanzainaer/react-docker -f Dockerfile.dev .
 script:
   - docker run wanwanzainaer/react-docker npm run test
