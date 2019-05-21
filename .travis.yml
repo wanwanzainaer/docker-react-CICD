@@ -1,0 +1,9 @@
+sudo: required
+serivces:
+  - docker
+
+before_install:
+  - docker build -t wanwanzainaer/react-docker -f Dockerfile.dev .
+
+script:
+  - docker run wanwanzainaer/react-docker npm run test
