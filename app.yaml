@@ -2,6 +2,7 @@ runtime: custom
 env: flex
 manual_scaling:
   instances: 1
-# network:
-#   forwarded_ports:
-#     - 8080:80
+network:
+  forwarded_ports:
+    - 8080
+    - 8080:80
